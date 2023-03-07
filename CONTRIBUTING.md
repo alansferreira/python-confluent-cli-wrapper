@@ -11,13 +11,10 @@ poetry install
 ## Utils commands
 ```bash
 # bumps project version and generates change log file
-poetry run cz bump --check-consistency --changelog && poetry version $(poetry run cz version -p)
 
 ```
 
 ## Contributing
 
-Check commit message formats on Conventional Commits, it's enable in this project with `commitzen`.
-
-You can bypass conventional commits using `--no-verify` on `clone, push` commands of `git`.
+See https://github.com/alansferreira/git-mkver-with-poetry to bump versions.
 

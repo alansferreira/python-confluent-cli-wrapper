@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-confluent-cli-wrapper"
-version = "1.0.0"
+version = "0.0.0"
 description = "Confluent CLI Wrapper for Python"
 authors = ["Alan S. Ferreira <alansferreira1984@gmail.com>"]
 readme = "README.md"
@@ -16,18 +16,8 @@ packages = [
 python = "^3.7"
 urllib3 = "^1.26.12"
 requests = "^2.28.1"
-commitizen = "^2.37.1"
-pre-commit = "^2.20.0"
 ruamel-yaml = "^0.17.21"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.commitizen]
-name = "cz_conventional_commits"
-version = "1.0.0"
-tag_format = "$version"
-version_files = [
-  "pyproject.toml:version"
-]
