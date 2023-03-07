@@ -4,6 +4,7 @@ version = "0.1.1"
 description = "Confluent CLI Wrapper for Python"
 authors = ["Alan S. Ferreira <alansferreira1984@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/alansferreira/python-confluent-cli-wrapper"
 packages = [
   { include = "confluent/cli/utils/parsers.py"}, 
   { include = "confluent/cli/commands/environment.py"}, 
