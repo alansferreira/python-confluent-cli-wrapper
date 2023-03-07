@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "kevinrose.vsc-python-indent",
+    "njpwerner.autodocstring",
+    "mgesbert.python-path",
+    "littlefoxteam.vscode-python-test-adapter",
+    "ms-python.vscode-pylance"
+  ]
+}
