@@ -1,23 +1,29 @@
-  # Confluent CLI Wraper for Python
+# Confluent CLI Wraper for Python
 
-## Installation
+Simple wrapper library to Confluent CLI
+
+
+## Get started
 
 ```bash
-pip3 install poetry
-poetry config virtualenvs.create true
-poetry install
+poetry add python-confluent-cli-wrapper
 ```
 
-## Utils commands
-```bash
-# bumps project version and generates change log file
-poetry run cz bump --check-consistency --changelog && poetry version $(poetry run cz version -p)
+```python
+from confluent.cli.wrapper.environment import Environment
+from confluent.cli.wrapper.kafka_cluster import KafkaCluster
+from confluent.cli.wrapper.kafka_topic import KafkaTopic
+from confluent.cli.wrapper.session import login
+from confluent.cli.wrapper.utils.parsers import OutputEnum
+
+environment=Environment()
+kafka_cluster=KafkaCluster()
+kafka_topic=KafkaTopic()
+
+login()
+
+environment.list()
+
+kafka_cluster.list()  # eq '--all' argument
 
 ```
-
-## Contributing
-
-Check commit message formats on Conventional Commits, it's enable in this project with `commitzen`.
-
-You can bypass conventional commits using `--no-verify` on `clone, push` commands of `git`.
-
