@@ -1,7 +1,7 @@
 from subprocess import Popen, PIPE
 import shlex
 from confluent.cli.commands.login import confluent_cli
-from utils.parsers import OutputParser, OutputEnum
+from confluent.cli.utils.parsers import OutputParser, OutputEnum
 
 class KafkaCluster:
   def __new__(cls, *args, **kwargs):
