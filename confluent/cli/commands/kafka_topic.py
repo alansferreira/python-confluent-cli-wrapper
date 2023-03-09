@@ -19,7 +19,7 @@ class KafkaTopic:
     
     if(not parse): return result
     
-    return self._parser(result, output)
+    return self._parser.parseOutput(result, output)
 
   def describe(self, cluster: str, topic: str, env: str, parse: bool = True, output: OutputEnum = OutputEnum.human): 
     login()
@@ -30,4 +30,4 @@ class KafkaTopic:
     
     if(not parse): return result
     
-    return self._parser(result, output)
+    return self._parser.parseOutput(result, output)

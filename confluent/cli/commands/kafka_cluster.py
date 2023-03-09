@@ -22,5 +22,5 @@ class KafkaCluster:
     
     if(not parse): return result
     
-    return self._parser(result, output)
+    return self._parser.parseOutput(result, output)
 
