@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-confluent-cli-wrapper"
-version = "0.2.1"
+version = "0.2.2"
 description = "Confluent CLI Wrapper for Python"
 authors = ["Alan S. Ferreira <alansferreira1984@gmail.com>"]
 readme = "README.md"
